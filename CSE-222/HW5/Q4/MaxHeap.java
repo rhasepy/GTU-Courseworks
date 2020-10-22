@@ -39,6 +39,27 @@ public class MaxHeap
 
         set_parent_forADD(parent_index, new_child_index);
     }
+    
+     /**
+     * set/organize related tree after added
+     * @param parent_i parent index
+     * @param child_i child index
+     */
+    private void set_parent_forADD(int parent_i, int child_i)
+    {
+        AgeCountCompare comparator = new AgeCountCompare();
+
+        while(parent_i >= 0 && (comparator.compare(heap.get(parent_i), heap.get(child_i)) < 0) )
+        {
+            AgeData temp = heap.get(parent_i);
+
+            heap.set(parent_i, heap.get(child_i));
+            heap.set(child_i, temp);
+
+            child_i = parent_i;
+            parent_i = (child_i - 1) / 2;
+        }
+    }
 
     /**
      * remove method
@@ -101,27 +122,6 @@ public class MaxHeap
             }
             else
                 break;
-        }
-    }
-
-    /**
-     * set/organize related tree after added
-     * @param parent_i parent index
-     * @param child_i child index
-     */
-    private void set_parent_forADD(int parent_i, int child_i)
-    {
-        AgeCountCompare comparator = new AgeCountCompare();
-
-        while(parent_i >= 0 && (comparator.compare(heap.get(parent_i), heap.get(child_i)) < 0) )
-        {
-            AgeData temp = heap.get(parent_i);
-
-            heap.set(parent_i, heap.get(child_i));
-            heap.set(child_i, temp);
-
-            child_i = parent_i;
-            parent_i = (child_i - 1) / 2;
         }
     }
 
