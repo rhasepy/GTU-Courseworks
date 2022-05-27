@@ -1,2 +1,1 @@
-# CSE222 - Data Structures And Algorithms
-
+**CSE222 - Data Structures And Algorithms**
