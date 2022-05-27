@@ -1,4 +1,2 @@
-# CSE241 - Object Oriented Programming
-
-# C++ / Java Using
-
+**CSE241 - Object Oriented Programming**
+**C++ / Java Using**
