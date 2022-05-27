@@ -1,4 +1,4 @@
 
-# CSE102 - Computer Programming
+**CSE102 - Computer Programming**
 
 **C Programming Language Projects**
