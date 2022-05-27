@@ -1,0 +1,5 @@
+Hello Sir. 
+For some reason I don't understand, when I run it with double click on linux, 
+even though I give relative path, it cannot get the resources. 
+If it is run with java -jar GameApp command on terminal (for images) it comes.
+Or run Makefile
